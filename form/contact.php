@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD']  === 'POST') {
         // Content
         $mail->isHTML(true);
         $mail->Subject = 'New message from landing page';
-        $mail->Body = '<h2>New message from '.$_POST['name'].'</h2><br> with content : '.$_POST['message'].' <br> reply with <a href=\"mailto:'.$_POST['email'].'\">'.$_POST['email'].'</a>';
+        $mail->Body = '<h5>Nouvelle demande de contact de '.$_POST['name'].'</h5><br> avec le contenu : '.$_POST['message'].' <br> repondre a <a href=\"mailto:'.$_POST['email'].'\">'.$_POST['email'].'</a>';
     
         $mail->send();
         echo 'Message has been sent';
