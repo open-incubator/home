@@ -80,7 +80,7 @@ p {
     color: white;
 }
 
-main > section {
+main > section, footer {
     padding: 3em;
     text-align: justify;
     text-justify: inter-word;
