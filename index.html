@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="gc:client-id" content="12d2e752f44a74cd">
+    <meta name="gc:client-secret" content="5dc8d3c03058fdc7bdd05612cf7091032742cfa0">
+    <title>Open:Incubator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <button class="hamburger">&#9776;</button>
+        <nav class="navigation centered">
+            <a href="#introduction">Qui sommes nous ?</a>
+            <a href="#fonctionnement">Un incubateur ?</a>
+            <a href="#discord">Discord</a>
+            <!-- Waiting for projects <a href="#projets">Nos projets</a>-->
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="jumbotron centered">
+            <h1 class="title"><b>Open</b>:<i>Incubator</i></h1>
+            <div class="subtitle">Made In France</div>
+        </div>
+    </header>
+
+    <main>
+        <section class="inverted" id="introduction">
+            <h2 class="centered">Qui sommes nous ?</h2>
+            <br>
+            <p>Bienvenue dans : <b>Open</b>:<i>Incubator</i>, un incubateur <i>Open Source</i> qui a pour but de promouvoir vos projets libres ainsi que de vous aider à les contstruire et à les déployer.</p>
+            <br>
+            <div class="row centered">
+                <div class="column">
+                    <div class="github-card" data-github="dimensi0n" data-width="300" data-height="100" data-theme="default"></div>
+                </div>
+                <div class="column">
+                    <div class="github-card" data-github="MrIanis" data-width="300" data-height="100" data-theme="default"></div>
+                </div>
+                <div class="column">
+                    <div class="github-card" data-github="tarzan79" data-width="300" data-height="1°°" data-theme="default"></div>
+                </div>
+            </div>
+        </section>
+        <section id="fonctionnement">
+            <h2 class="centered">Un incubateur ?</h2>
+            <br>
+            <p>Un incubateur est une structure d'accompagnement de projets. L'incubateur peut apporter un appui en termes d'hébergement, de conseil et de financement, lors des premières étapes de la vie du projet.</p>
+            <br>
+            <p class="centered"><i>Nous proposons ces services afin d'aider les projets OpenSource qui en font la demande auprès de notre incubateur : </i></p>
+            <br>
+            <div class="row">
+                <div class="column">
+                    <div class="card centered">
+                        <img src="images/community.png" alt="Communauté" width="200">
+                        <p>Une communauté de développeurs prêts à vous aider.</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card centered">
+                        <img src="images/matomo.png" alt="Matomo" width="200">
+                        <p>Une instance Matomo pour les analytics.</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card centered">
+                        <img src="images/hosting.png" alt="Hébergement" width="200">
+                        <p>Un hébergement web.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div class="card centered">
+                        <img src="images/gitea.png" alt="Gitea" width="200">
+                        <p>Une instance Gitea pour héberger le code de vos projets.</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card centered">
+                        <img src="images/kanboard.png" alt="KanBoard" width="200">
+                        <p>Une instance KanBoard pour gérer vos différentes tâches.</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card centered">
+                        <img src="images/netdata.jpg" alt="NetData" width="200">
+                        <p>Une instance NetData pour le monitoring du serveur.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="centered inverted" id="discord">
+            <h2>Discord</h2>
+            <div class="row">
+                <div class="column is-9">
+                    <p>Nous utilisons discord comme moyen de communication entre les membres de l'incubateur, c'est ici que nous discutons des projets en cours et à venir. Si vous souhaitez soumettre un projet nous vous attendons ici.</p>
+                    <br>
+                    <img src="images/discord.png" alt="Discord">
+                </div>
+                <br>
+                <div class="column is-3">
+                    <br>
+                    <iframe src="https://discordapp.com/widget?id=692329985226178660&theme=dark" allowtransparency="true" height="500" frameborder="0"></iframe>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <a href="https://discord.gg/cKH7Dpa" class="button">Rejoins-nous sur Discord</a>
+        </section>
+
+        <section class="centered" id="contact">
+            <h2>Contact</h2>
+            <p>Contactez nous par <a href="mailto:erwan.roussel@openincubator.tech">email</a> ou bien à l'aide du formulaire ci-dessous et nous vous recontacterons.</p>
+            <form class="centered" action="contact.php" method="post">
+                <input type="text" name="name" id="name" placeholder="Nom, Prénom">
+                <br>
+                <input type="email" name="email" id="email" placeholder="Addresse mail">
+                <br>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Contenu du message"></textarea>
+                <br>
+                <input type="submit" value="Envoyer" class="button">
+            </form>
+        </section>
+    </main>
+
+    <footer class="centered inverted">
+        <p>Made with ❤️ in 🇫🇷 by <b>Open</b>:<i>Incubator</i></p>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>  
+    <script src="script.js"></script>
+</body>
+</html>
