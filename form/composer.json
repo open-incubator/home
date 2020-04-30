@@ -1,0 +1,11 @@
+{
+    "name": "erwan/form",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Erwan",
+            "email": "e-roussel@outlook.com"
+        }
+    ],
+    "require": {}
+}

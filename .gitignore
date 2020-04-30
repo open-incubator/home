@@ -1,2 +1,5 @@
 # Mail config
-form/mail.php
+form/config.php
+
+# Vendor dependencies
+form/vendor
