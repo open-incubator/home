@@ -1,15 +1,39 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="gc:client-id" content="12d2e752f44a74cd">
     <meta name="gc:client-secret" content="5dc8d3c03058fdc7bdd05612cf7091032742cfa0">
-    <meta name="description" content="Bienvenue dans : Open:Incubator, un incubateur Open Source qui a pour but de promouvoir vos projets libres ainsi que de vous aider à les contstruire et à les déployer.">
+    <meta name="description"
+        content="Bienvenue dans : Open:Incubator, un incubateur Open Source qui a pour but de promouvoir vos projets libres ainsi que de vous aider à les contstruire et à les déployer.">
     <title>Open:Incubator</title>
     <link rel="shortcut icon" href="images/oi.png" type="image/png">
     <link rel="stylesheet" href="style.css">
+    <!-- Matomo -->
+    <script type="text/javascript">
+        var _paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function () {
+            var u = "//analytics.openincubator.tech/";
+            _paq.push(['setTrackerUrl', u + 'matomo.php']);
+            _paq.push(['setSiteId', '1']);
+            var d = document,
+                g = d.createElement('script'),
+                s = d.getElementsByTagName('script')[0];
+            g.type = 'text/javascript';
+            g.async = true;
+            g.defer = true;
+            g.src = u + 'matomo.js';
+            s.parentNode.insertBefore(g, s);
+        })();
+    </script>
+    <!-- End Matomo Code -->
 </head>
+
 <body>
     <header>
         <button class="hamburger">&#9776;</button>
@@ -30,26 +54,32 @@
         <section class="inverted" id="introduction">
             <h2 class="centered">Qui sommes nous ?</h2>
             <br>
-            <p>Bienvenue dans : <b>Open</b>:<i>Incubator</i>, un incubateur <i>Open Source</i> qui a pour but de promouvoir vos projets libres ainsi que de vous aider à les contstruire et à les déployer.</p>
+            <p>Bienvenue dans : <b>Open</b>:<i>Incubator</i>, un incubateur <i>Open Source</i> qui a pour but de
+                promouvoir vos projets libres ainsi que de vous aider à les contstruire et à les déployer.</p>
             <br>
             <div class="row centered">
                 <div class="column">
-                    <div class="github-card" data-github="dimensi0n" data-width="300" data-height="100" data-theme="default"></div>
+                    <div class="github-card" data-github="dimensi0n" data-width="300" data-height="100"
+                        data-theme="default"></div>
                 </div>
                 <div class="column">
-                    <div class="github-card" data-github="MrIanis" data-width="300" data-height="100" data-theme="default"></div>
+                    <div class="github-card" data-github="MrIanis" data-width="300" data-height="100"
+                        data-theme="default"></div>
                 </div>
                 <div class="column">
-                    <div class="github-card" data-github="tarzan79" data-width="300" data-height="1°°" data-theme="default"></div>
+                    <div class="github-card" data-github="tarzan79" data-width="300" data-height="1°°"
+                        data-theme="default"></div>
                 </div>
             </div>
         </section>
         <section id="fonctionnement">
             <h2 class="centered">Un incubateur ?</h2>
             <br>
-            <p>Un incubateur est une structure d'accompagnement de projets. L'incubateur peut apporter un appui en termes d'hébergement, de conseil et de financement, lors des premières étapes de la vie du projet.</p>
+            <p>Un incubateur est une structure d'accompagnement de projets. L'incubateur peut apporter un appui en
+                termes d'hébergement, de conseil et de financement, lors des premières étapes de la vie du projet.</p>
             <br>
-            <p class="centered"><i>Nous proposons ces services afin d'aider les projets OpenSource qui en font la demande auprès de notre incubateur : </i></p>
+            <p class="centered"><i>Nous proposons ces services afin d'aider les projets OpenSource qui en font la
+                    demande auprès de notre incubateur : </i></p>
             <br>
             <div class="row">
                 <div class="column">
@@ -97,14 +127,17 @@
             <h2>Discord</h2>
             <div class="row">
                 <div class="column is-9">
-                    <p>Nous utilisons discord comme moyen de communication entre les membres de l'incubateur, c'est ici que nous discutons des projets en cours et à venir. Si vous souhaitez soumettre un projet nous vous attendons ici.</p>
+                    <p>Nous utilisons discord comme moyen de communication entre les membres de l'incubateur, c'est ici
+                        que nous discutons des projets en cours et à venir. Si vous souhaitez soumettre un projet nous
+                        vous attendons ici.</p>
                     <br>
                     <img src="images/discord.png" alt="Discord">
                 </div>
                 <br>
                 <div class="column is-3">
                     <br>
-                    <iframe src="https://discordapp.com/widget?id=692329985226178660&theme=dark" allowtransparency="true" height="500" frameborder="0"></iframe>
+                    <iframe src="https://discordapp.com/widget?id=692329985226178660&theme=dark"
+                        allowtransparency="true" height="500" frameborder="0"></iframe>
                     <br>
                 </div>
             </div>
@@ -114,7 +147,8 @@
 
         <section class="centered" id="contact">
             <h2>Contact</h2>
-            <p>Contactez nous par <a href="mailto:erwan.roussel@openincubator.tech">email</a> ou bien à l'aide du formulaire ci-dessous et nous vous recontacterons.</p>
+            <p>Contactez nous par <a href="mailto:erwan.roussel@openincubator.tech">email</a> ou bien à l'aide du
+                formulaire ci-dessous et nous vous recontacterons.</p>
             <form class="centered" action="form/contact.php" method="post">
                 <input type="text" name="name" id="name" placeholder="Nom, Prénom">
                 <br>
@@ -132,7 +166,8 @@
     </footer>
 
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>  
+    <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
