@@ -1,11 +1,25 @@
 version: '3'
 services:
-  web:
+  home:
     build: .
     ports:
         - "5000:80"
+    networks:
+        - caddynet
     labels:
-        - traefik.http.routers.NOM-SERVICE-https.entrypoints=secure
-        - traefik.http.routers.NOM-SERVICE-https.rule=Host(`NOM-SERVICE.NDD`)
-        - traefik.http.routers.NOM-SERVICE-https.tls=true
-        - traefik.http.routers.NOM-SERVICE-https.tls.certresolver=letsencrypt
+        - traefik.enable=true
+        - traefik.http.routers.home.entrypoints=insecure
+        - traefik.http.routers.home.rule=Host(`openincubator.tech`)
+                        
+        - traefik.http.middlewares.https-redirect.redirectscheme.scheme=https
+        - traefik.http.middlewares.https-redirect.redirectscheme.permanent=true
+        - traefik.http.routers.home.middlewares=https-redirect@docker
+
+        - traefik.http.routers.home-https.entrypoints=secure
+        - traefik.http.routers.home-https.rule=Host(`openincubator.tech`)
+        - traefik.http.routers.home-https.tls=true
+        - traefik.http.routers.home-https.tls.certresolver=letsencrypt
+        - traefik.docker.network=web
+networks:
+  caddynet:
+    external: true
